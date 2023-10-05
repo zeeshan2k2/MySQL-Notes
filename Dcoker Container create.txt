@@ -1,0 +1,17 @@
+For Microsoft SQL server
+
+docker run -e "ACCEPT_EULA=1" -e "MSSQL_SA_PASSWORD=Password123" -e "MSSQL_PID=Developer" -e "MSSQL_USER=SA" -p 1433:1433 -d --name=sql mcr.microsoft.com/azure-sql-edge
+
+this above command will allow you to make containers in docker it contains all details name, password and username
+
+docker run -e "ACCEPT_EULA=1" -e "MSSQL_SA_PASSWORD=" -e "MSSQL_PID=Developer" -e "MSSQL_USER=" -p 1433:1433 -d --name= mcr.microsoft.com/azure-sql-edge
+
+this above command doesn't contain name, password and username whenever you want to add a container to docker run this in terminal and set name, username and password.
+
+
+For MYSQL
+
+docker run -d -p 8080:8080 --name mysql-docker-container -e MYSQL_ROOT_PASSWORD=sergey -e MYSQL_DATABASE=photo_app -e MYSQL_USER=sergey -e MYSQL_PASSWORD=sergey mysql/mysql-server:latest
+
+
+
